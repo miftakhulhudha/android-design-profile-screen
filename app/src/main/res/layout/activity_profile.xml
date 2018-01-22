@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    android:orientation="vertical"
+    tools:context="com.example.simpleprofile.ProfileActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Miftakhul Hudha"
+        android:textColor="@color/coloWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Android Developer"
+        android:textColor="@color/coloWhite" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="@color/coloWhite"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlueGrey700"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:columnCount="2">
+
+                <TextView
+                    android:text="Nama"
+                    android:textColor="@color/colorBlueGrey600"/>
+                <TextView
+                    android:text="Miftakhul Hudha"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorBlueGrey600"/>
+
+                <TextView
+                    android:text="No Telfon"
+                    android:textColor="@color/colorBlueGrey600"/>
+                <TextView
+                    android:text="081575061297"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorBlueGrey600"/>
+
+                <TextView
+                    android:text="Email"
+                    android:textColor="@color/colorBlueGrey600"/>
+                <TextView
+                    android:text="miftakhulhudha.mail@gmail.com"
+                    android:layout_gravity="right"
+                    android:textColor="@color/colorBlueGrey600"/>
+
+            </GridLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:text="Tentang Saya"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlueGrey700"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlueGrey600"
+                android:layout_marginTop="16dp"
+                android:text="Saya orang yang sopan, dapat dipercaya, mudah bergaul dan menyenagkan."/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="150dp"
+                android:text="Terhubung"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_rounded"
+                android:textColor="@color/coloWhite"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
